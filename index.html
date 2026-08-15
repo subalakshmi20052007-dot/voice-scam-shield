@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice Scam Shield</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SCREEN 1 ================= -->
+    <section class="screen active" id="home">
+
+        <div class="hero-icon">
+            <div class="shield">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+
+        <h1>Voice Scam Shield</h1>
+
+        <p class="subtitle">
+            Protect yourself from<br>
+            AI voice scams
+        </p>
+
+        <button class="primary-btn" onclick="showScreen('setup')">
+            <i class="fa-solid fa-shield-halved"></i>
+            "fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+                <strong>Protection Active</strong>
+                <p>Your phone is being monitored<br>for scam calls</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= SCREEN 2 ================= -->
+    
+
+
+        i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+
+
+            <div class="permission-card">
+                <div class="permission-icon">
+                    <i class<div class="microphone-area">
+
+            <div class="pulse pulse-one"></div>
+            <div class="pulse pulse-two"></div>
+            <div class="pulse pulse-three"></div>
+
+            <div class="big-mic">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+
+        </div>
+
+
+        <div class="analysis-card">
+
+            <h3>Live Call Analysis</h3>
+<
+                <i class=">
+            <button onclick="showScreen('home')" class="back-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div>
+                <h2>Set Up Protection</h2>
+                <p>Allow app to analyze incoming calls</p>
+            </div>
+        </div>
+
+        <div class="permission-list">
+
+            <div class="permission-card">
+                <div class="permission-icon">
+                    <i class="fa-solid section class="screen" id="setup">
+
+        <div class="top-barStart Protection
+        </button>
+
+        <div class="active-card">
+
+            
+            <div class="status-icon">fa-microphone"></i>
+                </div>
+
+                <div class="permission-text">
+                    <strong>Microphone Access</strong>
+                    <p>Allow audio recording<br>for call analysis</p>
+                </div>
+
+                <div class="check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+
+
+            <div class="permission-card">
+                <div class="permission-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="permission-text">
+                    <strong>Call Log Access</strong>
+                    <p>Identify incoming calls</p>
+                </div>
+
+                <div class="check">
+                    <="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="permission-text">
+                    <strong>Notifications</strong>
+                    <p>Show scam alerts<br>and warnings</p>
+                </div>
+
+                <div class="check">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="primary-btn setup-btn"
+                onclick="startMonitoring()">
+
+            <i class="fa-solid fa-shield-halved"></i>
+            Enable Protection
+
+        </button>
+
+    </section>
+
+
+<!-- ================= SCREEN 3 ================= -->
+
+<section class="screen monitoring" id="monitoring">
+
+    <div class="monitor-header">
+
+        <button onclick="showScreen('setup')" class="back-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div>
+            <h2>Call Monitoring</h2>
+            <p>Analyzing incoming call...</p>
+        </div>
+
+    </div>
+
+    <div class="wave">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="analysis-card">
+
+        <h3>Live Call Analysis</h3>
+
+        <div class="analysis-items">
+
+            <div>
+                <i class="fa-solid fa-microphone"></i>
+                <strong>Voice Analysis</strong>
+                <small>Analyzing...</small>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-message"></i>
+                <strong>NLP Analysis</strong>
+                <small>Analyzing...</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="demo-btn" onclick="showScreen('risk')">
+        Simulate Scam Detection
+    </button>
+
+</section>
+    
+
+    <!-- ================= SCREEN 4 ================= -->
+    <section class="screen risk-screen" id="risk">
+
+        <div class="risk-header">
+
+            <button onclick="showScreen('monitoring')" class="back-btn white">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <i class="fa-solid fa-triangle-exclamation warning-icon"></i>
+
+            <h2>HIGH RISK SCAM CALL</h2>
+
+            <p>Potential AI Voice Scam Detected</p>
+
+        </div>
+
+
+        <div class="risk-score">
+
+            <span>Risk Score</span>
+
+            <strong>92%</strong>
+
+            <div class="score-bar">
+                <div></div>
+            </div>
+
+        </div>
+
+
+        <div class="risk-items">
+
+            <div class="risk-item">
+                <i class="fa-solid fa-microphone"></i>
+
+                <div>
+                    <strong>Synthetic Voice Detected</strong>
+                    <small>AI-generated voice suspected</small>
+                </div>
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+
+
+            <div class="risk-item">
+                <i class="fa-solid fa-message"></i>
+
+                <div>
+                    <strong>Urgency Detected</strong>
+                    <small>Caller using emotional pressure</small>
+                </div>
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+
+
+            <div class="risk-item">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                <div>
+                    <strong>Money Request Detected</strong>
+                    <small>Request for immediate payment</small>
+                </div>
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+
+
+            <div class="risk-item">
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+                    <strong>Emotional Manipulation</strong>
+                    <small>Family emergency reported</small>
+                </div>
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+
+        </div>
+
+
+        <button class="danger-btn">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            DO NOT TRANSFER MONEY
+        </button>
+
+
+        <button class="details-btn" onclick="showScreen('details')">
+            View Call Details
+        </button>
+
+    </section>
+
+
+    <!-- ================= SCREEN 5 ================= -->
+    <section class="screen" id="details">
+
+        <div class="top-bar">
+
+            <button onclick="showScreen('risk')" class="back-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div>
+                <h2>Call Details</h2>
+            </div>
+
+        </div>
+
+
+        <div class="caller-card">
+
+            <div class="caller-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div>
+                <strong>Unknown Caller</strong>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <span class="scam-badge">Scam Risk</span>
+
+        </div>
+
+
+        <h3 class="section-title">Analysis Breakdown</h3>
+
+
+        <div class="analysis-grid">
+
+            <div class="analysis-box">
+
+                <i class="fa-solid fa-microphone"></i>
+
+                <span>Voice Analysis</span>
+
+                <strong>95%</strong>
+
+                <small>Suspicious</small>
+
+            </div>
+
+
+            <div class="analysis-box">
+
+                <i class="fa-solid fa-message"></i>
+
+                <span>NLP Analysis</span>
+
+                <strong>92%</strong>
+
+                <small>Scam Intent</small>
+
+            </div>
+
+        </div>
+
+
+        <h3 class="section-title">Detected Scam Indicators</h3>
+
+
+        <div class="indicator-list">
+
+            <p>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Urgency / Emergency language
+            </p>
+
+            <p>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Money transfer request
+            </p>
+
+            <p>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Family-related emotional manipulation
+            </p>
+
+            <p>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Possibility of AI-generated voice
+            </p>
+
+        </div>
+
+
+        <div class="safe-card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+                <strong>Stay Safe</strong>
+                <p>Do not share personal information or transfer money to unknown callers.</p>
+            </div>
+
+        </div>
+
+
+        <button class="primary-btn"
+                onclick="showScreen('safety')">
+
+            What Should I Do?
+
+        </button>
+
+    </section>
+
+
+    <!-- ================= SCREEN 6 ================= -->
+    <section class="screen" id="safety">
+
+        <div class="top-bar">
+
+            <button onclick="showScreen('details')" class="back-btn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div>
+                <h2>What to Do</h2>
+            </div>
+
+        </div>
+
+
+        <div class="safe-banner">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <div>
+                <strong>Stay Safe from Voice Scams</strong>
+                <p>Follow these simple tips</p>
+            </div>
+
+        </div>
+
+
+        <div class="safety-list">
+
+            <div class="safety-item">
+                <i class="fa-solid fa-ban"></i>
+
+                <div>
+                    <strong>Don't share OTP</strong>
+                    <p>Never share OTP, PIN or passwords.</p>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+            <div class="safety-item">
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <strong>Verify with trusted person</strong>
+                    <p>Confirm with family or bank directly.</p>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+            <div class="safety-item">
+                <i class="fa-solid fa-phone-volume"></i>
+
+                <div>
+                    <strong>Be alert for urgency</strong>
+                    <p>Scammers create fear and pressure.</p>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+
+            <div class="safety-item">
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <div>
+                    <strong>Use scam detection apps</strong>
+                    <p>Stay protected with AI-powered tools.</p>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+        </div>
+
+
+        <div class="india-card">
+
+            <i class="fa-solid fa-shield-heart"></i>
+
+            <p>
+                Together we can build a
+                <strong>safer digital India</strong>
+            </p>
+
+            <i class="fa-solid fa-heart"></i>
+
+        </div>
+
+
+        <button class="primary-btn"
+                onclick="showScreen('home')">
+
+            Back to Home
+
+        </button>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
